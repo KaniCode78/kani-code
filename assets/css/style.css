@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&family=Wix+Madefor+Display&display=swap');
+
+
+* {
+   
+    background: black;
+    color: white;
+    font-family: 'Orbit', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.cabecera-principal .container {
+    border: solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.cabecera-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
