@@ -15,51 +15,56 @@ a {
 
 
 .cabecera-principal .container {
-    border: solid;
+   
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    height: 100px;
+    align-items: center;
 
 }
 
 .logo {
     display: flex;
-    align-items: center;
-
 }
 
 .cabecera-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     gap: 15px;
+    align-items: center;
+
 }
 
 /*Comienza el hero*/
 
-main {
-    height: 400px;
+.hero-principal {
+    height: 600px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(/assets/img/htmlbyn.png);
+    background-image: url(/assets/img/sunrise.jpg);
 }
 
-.container {
+.hero-principal .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: solid;
+    align-items: center;
     background: none;
+    height: 400px;
 }
 
 .texto-hero {
     display: flex;
+    padding: 2px;
     flex-direction: column;
-    background: none;
+    /*background: rgba(68, 68, 104, 0.6);*/
+    background-color: transparent;
     width: 50%;
+    
+    border-radius: 32px;
 }
 
 
@@ -78,21 +83,29 @@ main {
     background: none;
 }
 
-.texto-hero a{
+.texto-hero a {
     background: none;
-    
+
 }
 
-.foto{
+.foto {
     display: flex;
     flex-direction: row;
     align-items: center;
     background: none;
 }
 
-
 .foto img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
+
+.botones-hero{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background: none;
+}
+
+
