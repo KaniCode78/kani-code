@@ -2,7 +2,7 @@
 
 
 * {
-   
+
     background: black;
     color: white;
     font-family: 'Orbit', sans-serif;
@@ -19,19 +19,80 @@ a {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
-    
-}
 
+}
 
 .cabecera-nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 15px;
+}
+
+/*Comienza el hero*/
+
+main {
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/assets/img/htmlbyn.png);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid;
+    background: none;
+}
+
+.texto-hero {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    width: 50%;
+}
+
+
+.texto-hero h1 {
+    display: flex;
+    font-size: 26px;
+    font-weight: bold;
+    background: none;
+
+}
+
+.texto-hero p {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+}
+
+.texto-hero a{
+    background: none;
+    
+}
+
+.foto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+}
+
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
