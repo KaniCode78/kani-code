@@ -15,13 +15,16 @@ a {
 
 
 .cabecera-principal .container {
-   
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     height: 100px;
     align-items: center;
+}
 
+.cabecera-principal a {
+    color: #08d85a;
+    font-size: 18px;
 }
 
 .logo {
@@ -38,11 +41,11 @@ a {
 /*Comienza el hero*/
 
 .hero-principal {
-    height: 600px;
+    height: 750px;
     width: 100%;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat no-repeat;
+    background-size: contain;
     background-attachment: fixed;
     background-image: url(/assets/img/sunrise.jpg);
 }
@@ -50,7 +53,8 @@ a {
 .hero-principal .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right;
+    padding: 20px;
     align-items: center;
     background: none;
     height: 400px;
@@ -63,8 +67,8 @@ a {
     /*background: rgba(68, 68, 104, 0.6);*/
     background-color: transparent;
     width: 50%;
-    
     border-radius: 32px;
+    text-align: right;
 }
 
 
@@ -88,24 +92,72 @@ a {
 
 }
 
-.foto {
+section {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    background: none;
+    height: 70px;
+   
+
 }
 
-.foto img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-
-.botones-hero{
+.botones-hero {
     display: flex;
     gap: 15px;
     justify-content: center;
     background: none;
+    align-items: center;
+}
+
+.botones-hero a {
+    font-size: 20px;
+    color: #08d85a;
+}
+
+/*skills*/
+
+/* .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    border: solid #08d85a;
+    height: 300px;
+    width: auto;
+} */
+
+.texto-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
 
+
+.skills-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+.skills-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.logos img {
+    height: 100px;
+    width: 100px;
+
+}
