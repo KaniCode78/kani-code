@@ -361,16 +361,10 @@ a {
     margin: 0 auto;
     text-align: left;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 input,
 textarea {
@@ -414,4 +408,5 @@ input[type="submit"]:hover {
     text-align: center;
     color: black;
     background: none;
+    font-weight: bolder;
 }
