@@ -13,7 +13,6 @@ a {
     text-decoration: none;
 }
 
-
 .cabecera-principal .container {
     padding: 20px;
     display: flex;
@@ -321,7 +320,7 @@ a {
 
 /* Formacion Academica */
 
-.formacion{
+.formacion {
     height: 400px;
     padding: 10px;
 }
@@ -349,7 +348,7 @@ a {
 
 /* formulario */
 
-.formulario-principal{
+.formulario-principal {
     display: flex;
     height: 500px;
     width: 100%;
@@ -392,7 +391,7 @@ input[type="submit"]:hover {
 
 /* footer */
 
-.pie{
+.pie {
     padding: 0;
     margin: 0;
     display: flex;
@@ -404,7 +403,7 @@ input[type="submit"]:hover {
 }
 
 
-.pie p{
+.pie p {
     text-align: center;
     color: black;
     background: none;
