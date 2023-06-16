@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/93e19d243d.js" crossorigin="anonymous"></script>
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/style.css" rel="stylesheet">
 
     <title>Portafolio Kani Code</title>
 </head>
@@ -149,10 +149,30 @@
                 <p>Alura 2023</p>
             </div>
             <div class="item2">
-                <h2>Licenciatura en Informatica<h2/>
-                <p>ITSCO 2003</p>
+                <h2>Licenciatura en Informatica
+                    <h2 />
+                    <p>ITSCO 2003</p>
             </div>
         </div>
+    </section>
+
+    <!-- Trabajos -->
+
+    <!-- Formulario de contacto -->
+    <section class="formulario">
+        <div class="formulario-principal">
+            <form action="/enviar-mensaje" method="POST">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" /><br />
+
+                <input type="email" id="email" name="email" placeholder="Email" /><br />
+
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto" /><br />
+
+                <textarea id="mensaje" name="mensaje" placeholder="Platicame como te puedo apoyar"></textarea><br />
+                <input type="submit" value="Contactame" />
+            </form>
+        </div>
+
     </section>
 
 
@@ -160,16 +180,12 @@
 
 
 
-
-
-<footer>
-
-</footer>
-
-
-
-
-
+    <footer>
+        <div class="pie">
+        <p>Copyright &copy; Kani Code</p>
+        <p>angeldanielrm@icloud.com</p>
+        </div>
+    </footer>
 
 
 

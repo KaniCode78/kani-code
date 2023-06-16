@@ -123,11 +123,11 @@ a {
 }
 
 
-#GitHub{
+#GitHub {
     transition: color 2s ease-out 100ms;
 }
 
-#texto-imagen{
+#texto-imagen {
     transition: color 2s ease-out 100ms;
     display: none;
 }
@@ -136,8 +136,8 @@ a {
     display: none;
 }
 
-.logos #texto-imagen:hover{
-    
+.logos #texto-imagen:hover {
+
     display: flex;
 
 }
@@ -145,7 +145,7 @@ a {
 
 
 
-.logos p:hover{
+.logos p:hover {
     display: flex;
     color: #FF1493;
 }
@@ -321,22 +321,97 @@ a {
 
 /* Formacion Academica */
 
-.formacion h1{
+.formacion{
+    height: 400px;
+    padding: 10px;
+}
+
+
+.formacion h1 {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 50px;
-    
+
 }
 
 .formacion h1:hover {
     color: #FF1493;
 }
 
-.formacion-container{
+.formacion-container {
     display: flex;
     justify-content: space-around;
     align-content: center;
     text-align: center;
-    
+
+}
+
+/* formulario */
+
+.formulario-principal{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.formulario-principal form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #08d85a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #08d85a;
+}
+
+/* footer */
+
+.pie{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: #bbb;
+}
+
+
+.pie p{
+    text-align: center;
+    color: black;
+    background: none;
 }
