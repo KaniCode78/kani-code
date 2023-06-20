@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbit&family=Wix+Madefor+Display&display=swap');
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
-* {
 
+* {
     background: black;
     color: white;
     font-family: 'Orbit', sans-serif;
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
-body{
+:root {
+    --lineas-verdes: #08d85a;
+
+}
+
+
+
+body {
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
@@ -18,7 +25,7 @@ a {
 }
 
 .cabecera-principal .container {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -26,7 +33,7 @@ a {
 }
 
 .cabecera-principal a {
-    color: #08d85a;
+    color: var(--lineas-verdes);
     font-size: 18px;
 }
 
@@ -83,23 +90,6 @@ a {
 
 }
 
-@media (min-width: 320px)and (max-width: 480px) {
-    .hero-principal {
-        background-size: cover;
-    }
-
-    .texto-hero {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .texto-hero h1 {
-        font-size: 18px;
-        font-weight: bold;
-        background: none;
-
-    }
-}
 
 
 .texto-hero a {
@@ -139,26 +129,16 @@ a {
 
 
 #GitHub {
-    transition: color 2s ease-out 100ms;
+    border: .5px solid#08d85a;
+    height: 100px;
+    width: 100px;
 }
 
-#texto-imagen {
-    transition: color 2s ease-out 100ms;
-    display: none;
+#html5 {
+    border: .5px solid#08d85a;
+    height: 100px;
+    width: 100px;
 }
-
-.logos #GitHub:hover {
-    display: none;
-}
-
-.logos #texto-imagen:hover {
-
-    display: flex;
-
-}
-
-
-
 
 .logos p:hover {
     display: flex;
@@ -430,6 +410,16 @@ input[type="submit"]:hover {
 /*Medias*/
 
 @media (min-width: 320px)and (max-width: 480px) {
+    .cabecera-principal .container {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .cabecera-principal a {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
     .logo {
         display: flex;
@@ -441,3 +431,53 @@ input[type="submit"]:hover {
         display: none;
     }
 }
+
+
+/*hero*/
+
+@media (min-width: 320px)and (max-width: 480px) {
+    .hero-principal {
+        background-size: cover;
+    }
+
+    .hero-principal .container {
+        padding: 0%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .texto-hero {
+        text-align: center;
+        width: auto;
+    }
+
+    .texto-hero h1 {
+        font-size: 18px;
+    }
+    .ligas{
+        flex-direction: column;
+    }
+
+}
+
+/*
+.ligas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.botones-hero {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background: none;
+    align-items: center;
+}
+
+.botones-hero a {
+    font-size: 20px;
+    color: #08d85a;
+}
+*/
