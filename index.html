@@ -9,14 +9,14 @@
     <script src="https://kit.fontawesome.com/93e19d243d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <title>Portafolio Kani Code</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header class="cabecera-principal">
         <div class="container">
-            <div class="logo">
-                <a href="">KaniCode</a>
+            <div class="bg-6">
+                <div class="glitch" data-text="Kani Code">Kani Code</div>
             </div>
             <div>
                 <nav class="cabecera-nav">
@@ -66,30 +66,30 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="img-hobbies" src="/assets/img/githubgreen.svg" alt="git">
+                            <img class="img-hobbies" src="./assets/img/githubgreen.svg" alt="git">
                         </div>
                         <div class="flip-card-back">
-                            <img class="img-hobbies" src="/assets/img/github-octocat-svgrepo-com.svg" alt="git">
+                            <img class="img-hobbies" src="./assets/img/github-octocat-svgrepo-com.svg" alt="git">
                         </div>
                     </div>
                 </div>
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="img-hobbies" src="/assets/img/html5-01-svgrepo-com.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/html5-01-svgrepo-com.svg" alt="Avatar">
                         </div>
                         <div class="flip-card-back">
-                            <img class="img-hobbies" src="/assets/img/html-5-svgrepo-com.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/html-5-svgrepo-com.svg" alt="Avatar">
                         </div>
                     </div>
                 </div>
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="img-hobbies" src="/assets/img/css3green.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/css3green.svg" alt="Avatar">
                         </div>
                         <div class="flip-card-back">
-                            <img class="img-hobbies" src="/assets/img/css-3-svgrepo-com.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/css-3-svgrepo-com.svg" alt="Avatar">
                         </div>
                     </div>
                 </div>
@@ -98,30 +98,30 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="img-hobbies" src="/assets/img/javascriptgreen.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/javascriptgreen.svg" alt="Avatar">
                         </div>
                         <div class="flip-card-back">
-                            <img class="img-hobbies" src="/assets/img/javascriptcolor.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/javascriptcolor.svg" alt="Avatar">
                         </div>
                     </div>
                 </div>
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="img-hobbies" src="/assets/img/reactgreen.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/reactgreen.svg" alt="Avatar">
                         </div>
                         <div class="flip-card-back">
-                            <img class="img-hobbies" src="/assets/img/react-svgrepo-com.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/react-svgrepo-com.svg" alt="Avatar">
                         </div>
                     </div>
                 </div>
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class="img-hobbies" src="/assets/img/nodejsgreen.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/nodejsgreen.svg" alt="Avatar">
                         </div>
                         <div class="flip-card-back">
-                            <img class="img-hobbies" src="/assets/img/node-js-svgrepo-com.svg" alt="Avatar">
+                            <img class="img-hobbies" src="./assets/img/node-js-svgrepo-com.svg" alt="Avatar">
                         </div>
                     </div>
                 </div>
@@ -185,17 +185,22 @@
 
     <!--Formacion Academica  -->
     <section class="formacion">
-        <h1>Formacion Academica</h1>
+        <div class="texto-formacion">
+            <h1>Formacion Academica</h1>
+        </div>
         <div class="formacion-container">
-            <div class="item1">
+            <div>
+                <img id="ucamp" src="./assets/img/ucamp.png" alt="ucamplogo">
                 <h2>Desarrollo Full Stack</h2>
                 <p>Ucamp 2023</p>
             </div>
-            <div class="item2">
+            <div>
+                <img id="alura" src="/assets/img/aluraoracle.png" alt="aluralogo">
                 <h2>Desarrollo Front End</h2>
                 <p>Alura 2023</p>
             </div>
-            <div class="item3">
+            <div>
+                <img id="itsco" src="/assets/img/tect.jpg" alt="">
                 <h2>Licenciatura en Informatica
                     <h2 />
                     <p>ITSCO 2003</p>
@@ -204,6 +209,31 @@
     </section>
 
     <!-- Trabajos -->
+    <section class="expertis-principal">
+        <button class="btnn" onclick="plusDivs(-1)">Ver (+) ---&#10095;</button>
+        <div class="expertis-container">
+            <img class="mySlides" src="./assets/img/ejem1.jpg">
+            <img class="mySlides" src="./assets/img/ejem2.jpg">
+            <img class="mySlides" src="./assets/img/ejem3.jpg">
+            <img class="mySlides" src="./assets/img/ejem4.jpg">
+        </div>
+        <button class="btnn" onclick="plusDivs(+1)">&#10094;--- Ver(-) </button>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Formulario de contacto -->
     <section class="formulario">
