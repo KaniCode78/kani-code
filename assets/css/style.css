@@ -3,6 +3,8 @@
 
 
 * {
+    margin: 0%;
+    padding: 0;
     background: black;
     color: white;
     font-family: 'Orbit', sans-serif;
@@ -13,7 +15,6 @@
     --lineas-verdes: #08d85a;
 
 }
-
 
 
 body {
@@ -74,7 +75,6 @@ a {
     display: flex;
     padding: 2px;
     flex-direction: column;
-    /*background: rgba(68, 68, 104, 0.6);*/
     background-color: transparent;
     width: 50%;
     border-radius: 32px;
@@ -90,18 +90,19 @@ a {
 
 }
 
-
-
 .texto-hero a {
     background: none;
 
 }
 
+/*Ligas CV*/
+
 .ligas {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
+    height: auto;
+    padding: 20px;
 }
 
 .botones-hero {
@@ -119,26 +120,31 @@ a {
 
 /*skills*/
 
-.skills {
-    height: 600px;
-    width: 80%;
+.skills-principal {
+    padding: 10px;
+    height: auto;
+    width: 100%;
     justify-content: center;
-    align-items: center;
+}
+
+.skills-container-1 {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+}
+
+.skills-container-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 300px;
 }
 
 
-#GitHub {
-    border: .5px solid#08d85a;
-    height: 100px;
-    width: 100px;
-}
-
-#html5 {
-    border: .5px solid#08d85a;
-    height: 100px;
-    width: 100px;
-}
 
 .logos p:hover {
     display: flex;
@@ -147,14 +153,15 @@ a {
 
 
 .texto-skills {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 200px;
-    font-size: 50px;
+    height: auto;
+    font-size: 30px;
     transition: color 2s ease-out 100ms;
 }
 
@@ -162,26 +169,6 @@ a {
     color: #FF1493;
 }
 
-.skills-container-1 {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 80%;
-    height: 300px;
-}
-
-.skills-container-2 {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 300px;
-}
 
 .logos img {
     height: 100px;
@@ -198,7 +185,7 @@ a {
     align-items: center;
     text-align: justify;
     width: 70%;
-    height: 360px;
+    height: auto;
     font-size: 30px;
     margin: 0 auto;
 }
@@ -223,14 +210,7 @@ a {
     margin: 0 auto;
 }
 
-.flip-card1 {
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-}
+
 
 .flip-card-inner {
     position: relative;
@@ -240,10 +220,6 @@ a {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card1:hover .flip-card-inner {
-    transform: rotateY(180deg);
 }
 
 .flip-card-front,
@@ -270,7 +246,8 @@ a {
 }
 
 
-.flip-card2 {
+.flip-card {
+    display: flex;
     flex-direction: row;
     background-color: transparent;
     width: 100px;
@@ -278,35 +255,8 @@ a {
     perspective: 1000px;
 }
 
-.flip-card2:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-
-}
-
-.flip-card3 {
-    flex-direction: row;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-}
-
-.flip-card3:hover .flip-card-inner {
-    transform: rotateY(180deg);
-
-}
-
-.flip-card4 {
-    flex-direction: row;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-}
-
-.flip-card4:hover .flip-card-inner {
-    transform: rotateY(180deg);
-
 }
 
 .img-hobbies {
@@ -317,16 +267,15 @@ a {
 /* Formacion Academica */
 
 .formacion {
-    height: 400px;
+    height: auto;
     padding: 10px;
 }
-
 
 .formacion h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 
 }
 
@@ -339,8 +288,17 @@ a {
     justify-content: space-around;
     align-content: center;
     text-align: center;
-
 }
+
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
 
 /* formulario */
 
@@ -454,30 +412,72 @@ input[type="submit"]:hover {
     .texto-hero h1 {
         font-size: 18px;
     }
-    .ligas{
+
+}
+
+/* ligas */
+
+@media (min-width: 320px)and (max-width: 480px) {
+
+    .ligas {
+        display: flex;
+        height: 250px;
+        width: auto;
+    }
+
+    .botones-hero {
         flex-direction: column;
+        gap: 25px;
+    }
+
+    .botones-hero a {
+        font-size: 30px;
+        color: #08d85a;
     }
 
 }
 
-/*
-.ligas {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-}
 
-.botones-hero {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    background: none;
-    align-items: center;
-}
+/*skills*/
 
-.botones-hero a {
-    font-size: 20px;
-    color: #08d85a;
+@media (min-width: 320px)and (max-width: 480px) {
+    .skills-principal {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+
+
+    .skills-container-1 {
+        display: block;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills img {
+        margin: 10px;
+        height: 70px;
+
+    }
+
+    #css3 {
+        height: 60px;
+    }
+
+    .skills-container-2 {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+
 }
-*/
