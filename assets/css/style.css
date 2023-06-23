@@ -359,8 +359,6 @@ a {
     height: 300px;
 }
 
-
-
 .logos p:hover {
     display: flex;
     color: #FF1493;
@@ -384,11 +382,6 @@ a {
     color: #FF1493;
 }
 
-
-.logos img {
-    height: 100px;
-    width: 100px;
-}
 
 /* Hobiies */
 
@@ -447,7 +440,7 @@ a {
 }
 
 .flip-card-front {
-    background-color: #bbb;
+    background-color:none;
     color: black;
 }
 
@@ -477,6 +470,7 @@ a {
 .img-hobbies {
     width: 100px;
     height: 100px;
+    
 }
 
 /* Formacion Academica */
@@ -586,6 +580,7 @@ a {
     height: 2.5em;
     width: 15em;
     border: none;
+    background: none;
 }
 
 /* formulario */
