@@ -6,7 +6,6 @@
     margin: 0%;
     padding: 0;
     color: white;
-    
     font-family: 'Orbit', sans-serif;
     font-family: 'Wix Madefor Display', sans-serif;
 }
@@ -26,11 +25,11 @@ a {
 }
 
 .bg-6 {
-    background:none;
+    background: none;
 }
 
 .glitch {
-    color:#08d85a;
+    color: #08d85a;
     font-size: 20px;
     font-weight: bold;
     position: relative;
@@ -237,12 +236,14 @@ a {
     }
 }
 
+
+
 .cabecera-principal {
-    margin: 15px;
-    padding: 10px;
-    border-radius: 12px;
+    margin: 1vw;
+    padding: 1vw;   
     height: auto;
     display: flex;
+    background: black;
 }
 
 .cabecera-principal .container {
@@ -273,7 +274,7 @@ a {
     width: auto;
     background-position: center;
     background-repeat: repeat no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-image: url(/assets/img/sunrise.jpg);
 }
@@ -440,7 +441,7 @@ a {
 }
 
 .flip-card-front {
-    background-color:none;
+    background-color: none;
     color: black;
 }
 
@@ -470,7 +471,7 @@ a {
 .img-hobbies {
     width: 100px;
     height: 100px;
-    
+
 }
 
 /* Formacion Academica */
@@ -544,6 +545,97 @@ a {
 }
 
 /*Trabajos*/
+
+.expertis-principal .box-2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: none;
+}
+
+.box-2 span{
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+}
+
+
+div[class*=box] {
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn2 {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+.btn-two {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.btn-two span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255, 255,  0);
+}
+
+.btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255, 255,  0);
+}
+
+/* gjhgfjghjgfhjjghjk */
+
+
+
+
 
 .expertis-principal {
     padding: 20px;
