@@ -3,25 +3,33 @@
 
 
 * {
-    margin: 0%;
-    padding: 0;
+
     color: white;
-    font-family: 'Orbit', sans-serif;
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
 :root {
     --lineas-verdes: #08d85a;
-
+    --texto-general: 'Orbit', sans-serif;
 }
 
 body {
-    background-image: url(/assets/img/fondo.jpg);
-    font-family: 'Wix Madefor Display', sans-serif;
+    background: black;
+    font-family: var(--texto-general);
 }
 
 a {
     text-decoration: none;
+}
+
+/*Trabajando en el header*/
+
+.cabecera-principal {
+    margin: 1vw;
+    padding: 20px;
+    height: 2vw;
+    display: flex;
+    background: black;
 }
 
 .bg-6 {
@@ -30,12 +38,12 @@ a {
 
 .glitch {
     color: #08d85a;
-    font-size: 20px;
+    font-size: 2em;
     font-weight: bold;
     position: relative;
     width: 800px;
     margin: 0 auto;
-    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: var(--texto-general);
 }
 
 .glitch:after {
@@ -236,15 +244,10 @@ a {
     }
 }
 
-
-
 .cabecera-principal {
-    margin: 1vw;
-    padding: 1vw;   
-    height: auto;
-    display: flex;
-    background: black;
+    margin: 0%;
 }
+
 
 .cabecera-principal .container {
     display: flex;
@@ -254,7 +257,7 @@ a {
 
 .cabecera-principal a {
     color: var(--lineas-verdes);
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 .bg-6 {
@@ -263,52 +266,38 @@ a {
 
 .cabecera-nav {
     display: flex;
-    gap: 15px;
-    align-items: center;
+    align-items: self-end;
 }
 
 /*Comienza el hero*/
 
 .hero-principal .container {
-    height: auto;
-    width: auto;
-    background-position: center;
-    background-repeat: repeat no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(/assets/img/sunrise.jpg);
-}
-
-.hero-principal .container {
+    border: #08d85a solid;
     display: flex;
     flex-direction: row;
     justify-content: right;
     padding: 20px;
     align-items: center;
-    height: 800px;
+    height: 40vw;
+
 }
+
+
 
 .texto-hero {
     display: flex;
     padding: 2px;
-    flex-direction: column;
-    width: 50%;
+    width: 60%;
     text-align: right;
 }
 
-
 .texto-hero h1 {
     display: flex;
-    font-size: 36px;
+    font-size: 3em;
     font-weight: bold;
     background-color: none;
     align-content: flex-end;
     color: white;
-}
-
-.texto-hero a {
-    background: none;
-
 }
 
 /*Ligas CV*/
@@ -317,20 +306,19 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: auto;
+    height: 3vw;
     padding: 20px;
 }
 
 .botones-hero {
     display: flex;
-    gap: 15px;
+    gap: 1em;
     justify-content: center;
-    background: none;
     align-items: center;
 }
 
 .botones-hero a {
-    font-size: 20px;
+    font-size: 2rem;
     color: #08d85a;
 }
 
@@ -341,6 +329,7 @@ a {
     height: auto;
     width: 100%;
     justify-content: center;
+    border: #08d85a solid;
 }
 
 .skills-container-1 {
@@ -397,6 +386,7 @@ a {
     height: auto;
     font-size: 30px;
     margin: 0 auto;
+
 }
 
 .texto-hobbies h1:hover {
@@ -417,6 +407,7 @@ a {
     width: 80%;
     align-items: center;
     margin: 0 auto;
+    border: #08d85a solid;
 }
 
 
@@ -478,6 +469,7 @@ a {
 
 
 .formacion {
+    border: #08d85a solid;
     height: 600px;
     padding: 10px;
     display: flex;
@@ -547,6 +539,7 @@ a {
 /*Trabajos*/
 
 .expertis-principal .box-2 {
+
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -555,87 +548,8 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     background: none;
+
 }
-
-.box-2 span{
-    height: 45px;
-    width: 45px;
-    font-size: 1.5rem;
-}
-
-
-div[class*=box] {
-    height: 33.33%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.btn2 {
-    line-height: 50px;
-    height: 50px;
-    text-align: center;
-    width: 250px;
-    cursor: pointer;
-}
-
-.btn-two {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-}
-
-.btn-two span {
-    z-index: 2;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.btn-two::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.btn-two::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.btn-two:hover::before {
-    transform: rotate(-45deg);
-    background-color: rgba(255, 255,  0);
-}
-
-.btn-two:hover::after {
-    transform: rotate(45deg);
-    background-color: rgba(255, 255,  0);
-}
-
-/* gjhgfjghjgfhjjghjk */
-
-
-
-
 
 .expertis-principal {
     padding: 20px;
@@ -679,9 +593,10 @@ div[class*=box] {
 
 .formulario-principal {
     display: flex;
-    height: 500px;
-    width: 100%;
+    height: 40%;
+    width: auto;
     padding: 20px;
+    border: #08d85a solid;
 }
 
 .formulario-principal form {
@@ -722,12 +637,12 @@ input[type="submit"]:hover {
 
 .pie {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
-    width: 100%;
+    height: 5vw;
+    width: auto;
     background: rgb(8, 216, 90);
     background: linear-gradient(0deg, rgba(8, 216, 90, 1) 0%, rgba(204, 204, 204, 0) 84%);
 }
