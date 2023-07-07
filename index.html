@@ -135,7 +135,6 @@
         <h1>Hobbies</h1>
     </div>
     <section class="hobbies">
-
         <div class="hobbies-container">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -177,7 +176,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -200,69 +198,59 @@
             <div>
                 <img id="itsco" src="/assets/img/tect.jpg" alt="">
                 <h2>Licenciatura en Informatica</h2>
-                    <p>Instituto Tecnologico Superior </br> de Cosamaloapan 2003</p>
+                <p>Instituto Tecnologico Superior </br> de Cosamaloapan 2003</p>
             </div>
         </div>
     </section>
 
-    <!-- Trabajos -->
+    <!-- Mis proyectos -->
     <section class="expertis-principal">
         <h1>Mis Proyectos</h1>
         <div class="container-card">
-        <div class="card">
-            <img src="/assets/img/ejem1.jpg" alt="John" style="width:100%">
-            <h2>Garibay & Asociados</h2>
-            <p class="title">By KaniCode</p>
-            <p>Sitio con un estilo minimalista</p>
-            <p><button>Descubrelo</button></p>
+            <div class="card">
+                <img src="/assets/img/ejem1.jpg" alt="John" style="width:100%">
+                <h2>Garibay & Asociados</h2>
+                <p class="title">By KaniCode</p>
+                <p>Sitio con un estilo minimalista</p>
+                <p><button>Descubrelo</button></p>
+            </div>
+            <div class="card">
+                <img src="/assets/img/ejem2.jpg" alt="John" style="width:100%">
+                <h2>Hero Pet</h2>
+                <p class="title">By KaniCode</p>
+                <p>Sitio emulando pagina de servicios para mascotas</p>
+                <p><button>Descubrelo</button></p>
+            </div>
+            <div class="card">
+                <img src="/assets/img/ejem3.jpg" alt="John" style="width:100%">
+                <h2>CRUD</h2>
+                <p class="title">By KaniCode</p>
+                <p>CRUD Desarrollado como practica</p>
+                <p><button>Descubrelo</button></p>
+            </div>
         </div>
-        <div class="card">
-            <img src="/assets/img/ejem2.jpg" alt="John" style="width:100%">
-            <h2>Hero Pet</h2>
-            <p class="title">By KaniCode</p>
-            <p>Sitio emulando pagina de servicios para mascotas</p>
-            <p><button>Descubrelo</button></p>
-        </div>
-        <div class="card">
-            <img src="/assets/img/ejem3.jpg" alt="John" style="width:100%">
-            <h2>CRUD</h2>
-            <p class="title">By KaniCode</p>
-            <p>CRUD Desarrollado como practica</p>
-            <p><button>Descubrelo</button></p>
-        </div>
-    </div>
     </section>
-
-
 
     <!-- Formulario de contacto -->
     <section class="formulario">
-      
-<p>¿Te gusto mi trabajo? No dudes en contactarme, platicame tu idea y logremos ese proyecto en conjunto.</p>
-
-
-        <div class="formulario-principal">
-            <div class="vid-izquierda">
-                <video src="/assets/img/math.mp4" autoplay loop></video>
+        <div>
+            <p>¿Te gusto mi trabajo? No dudes en contactarme, platicame tu idea y logremos ese proyecto en conjunto.</p>
+            <div class="formulario-principal">
+                <div class="vid-izquierda">
+                    <video src="/assets/img/math.mp4" autoplay loop></video>
+                </div>
+                <div class="form-derecha">
+                    <form action="/enviar-mensaje" method="POST">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required /><br />
+                        <input type="email" id="email" name="email" placeholder="Email" required /><br />
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" /><br />
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu idea aqui"></textarea><br />
+                        <input type="submit" value="Contactame" />
+                    </form>
+                </div>
             </div>
-            <div class="form-derecha">
-            <form action="/enviar-mensaje" method="POST">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required /><br />
-
-                <input type="email" id="email" name="email" placeholder="Email" required /><br />
-
-                <input type="text" id="asunto" name="asunto" placeholder="Asunto" /><br />
-
-                <textarea id="mensaje" name="mensaje" placeholder="Platicame como te puedo apoyar"></textarea><br />
-                <input type="submit" value="Contactame" />
-            </form>
         </div>
-        </div>
-
     </section>
-
-
-
 
     <!-- footer simple -->
 
@@ -272,8 +260,6 @@
             <p>angeldanielrm@icloud.com</p>
         </div>
     </footer>
-
-
 
 
     <script src="./assets/js/main.js"></script>

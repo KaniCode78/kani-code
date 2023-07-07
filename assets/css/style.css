@@ -273,8 +273,14 @@ a {
 
 /*Comienza el hero*/
 
+.hero-principal{
+    margin: 0 auto;
+}
+
+
+
 .hero-principal .container {
-    border: #08d85a solid;
+    
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -330,7 +336,7 @@ a {
     height: auto;
     width: 100%;
     justify-content: center;
-    border: #08d85a solid;
+    
 }
 
 .skills-container-1 {
@@ -408,7 +414,7 @@ a {
     width: 80%;
     align-items: center;
     margin: 0 auto;
-    border: #08d85a solid;
+   
 }
 
 .flip-card-inner {
@@ -466,12 +472,13 @@ a {
 /* Formacion Academica */
 
 .formacion {
-    border: #08d85a solid;
+   
     height: 600px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .texto-formacion {
@@ -499,7 +506,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    height: 300px;
+    height: auto;
     align-items: center;
     background: none;
 }
@@ -513,7 +520,6 @@ a {
 .formacion p {
     background: none;
 }
-
 
 #ucamp {
     width: 100px;
@@ -533,11 +539,14 @@ a {
     height: 100px;
 }
 
-/*Trabajos*/
-.expertis-principal{
+/*Mis projectos*/
+.expertis-principal {
     padding: 20px;
+
     
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .expertis-principal h1 {
@@ -566,15 +575,15 @@ a {
     gap: 1rem;
 }
 
-.card h2{
+.card h2 {
     font-size: 1.5rem;
 }
 
-.card p{
+.card p {
     padding: .5rem;
 }
 
-.card img{
+.card img {
     border-radius: 15px;
     border: #08d85a solid;
 }
@@ -598,58 +607,56 @@ button {
     gap: 1rem;
 }
 
-/* a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-} */
-
 button:hover,
 a:hover {
     opacity: 0.7;
 }
 
 
-
-
 /* formulario */
 
-.formulario p{
+.formulario {
+
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+   
+}
+
+.formulario p {
     text-align: center;
     padding: 20px;
+}
+
+.formulario-principal {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    padding: 20px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 
 .formulario-principal {
     display: flex;
     justify-content: space-around;
-    height: 40%;
-    width: auto;
-    padding: 20px;
-    align-items: center;
-    background-color: rgba(0,0,0,1);
 }
 
-
-.formulario-principal .vid-izquierda{
-    display: flex;
-    height: 40%;
-    
-}
-.vid-izquierda video{
+.vid-izquierda video {
     border-radius: 10%;
     border: #08d85a solid;
 }
 
 .formulario-principal form {
+
     width: 500px;
     margin: 0 auto;
     text-align: left;
     padding: 20px;
     border-radius: 5px;
 }
-
-
 
 input,
 textarea {
@@ -660,6 +667,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+    color: #d80839;
 }
 
 input[type="submit"] {
@@ -675,20 +683,19 @@ input[type="submit"]:hover {
     background-color: #08d85a;
 }
 
+
+
 /* footer */
 
 .pie {
-    padding: 0;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 5vw;
+    height: 10vw;
     width: auto;
-    background: rgb(8, 216, 90);
+
     background: linear-gradient(0deg, rgba(8, 216, 90, 1) 0%, rgba(204, 204, 204, 0) 84%);
 }
-
 
 .pie p {
     text-align: center;
@@ -697,8 +704,34 @@ input[type="submit"]:hover {
     font-weight: bolder;
 }
 
-
 /*Medias*/
+
+/*footer*/
+
+@media (min-width: 320px)and (max-width: 480px) {
+    footer {
+
+        height: 60px;
+        width: auto;
+
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pie p {
+        color: white;
+    }
+}
+
+
+
+
+/*header*/
 
 @media (min-width: 320px)and (max-width: 480px) {
     .cabecera-principal .container {
@@ -723,15 +756,17 @@ input[type="submit"]:hover {
     }
 }
 
-
 /*hero*/
 
 @media (min-width: 320px)and (max-width: 480px) {
     .hero-principal {
-        height: 600;
         width: auto;
         padding: 0%;
         justify-content: center;
+        height: auto;
+    }
+
+    .hero-principal .container{
         height: auto;
     }
 
@@ -813,27 +848,70 @@ input[type="submit"]:hover {
 /*formacion academica*/
 
 @media (min-width: 320px)and (max-width: 480px) {
+    .formacion {
+        padding: 0%;
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
     .formacion .formacion-container {
-        display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-around;
         gap: 20px;
-        height: auto;
     }
 }
 
+/*Trabajos*/
+
 @media (min-width: 320px)and (max-width: 480px) {
-    .expertis-principal .card {
+    .expertis-principal .container-card {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
 
-    .expertis-principal .card {
-        height: 300px;
-        width: 300px;
+    .container-card img {
+        display: block;
     }
+}
+
+/*formulario*/
+
+@media (min-width: 320px)and (max-width: 480px) {
+    .formulario {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        text-align: justify;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .formulario-principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vid-izquierda video {
+        display: none;
+    }
+
+    .form-derecha form {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .form-derecha input::placeholder,
+    textarea::placeholder {
+        text-align: center;
+    }
+
 
 }
